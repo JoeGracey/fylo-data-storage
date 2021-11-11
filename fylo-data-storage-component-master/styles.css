@@ -1,11 +1,24 @@
 html {
-  background-color: 	#0c122c;
+  background-color: #0c122c;
   text-align: center;
+  font-family: sans-serif;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 430px;
+  left: 320px;
+  z-index: 10;
 }
 
 .fylo-background,
 .storage-background {
-  background-color: 	#1d2c67;
+  background-color: #1d2c67;
   border-radius: 15px;
   width: 50%;
 }
@@ -18,10 +31,14 @@ html {
   width: 25%;
   border-radius: 5px 100px 5px 5px;
   height: 175px;
+  position: relative;
+  top: 295px;
+  left: 150px;
 }
 
-.fylo-text {
-
+.storage-background {
+  overflow: hidden;
+  margin: 0 0 0 40%;
 }
 
 .logo {
@@ -51,19 +68,19 @@ html {
   color: black;
   font-size: 2em;
   font-family: sans-serif;
-  border: .5px solid #ffe599;
 }
 
 .progress-bar-background {
   color: #5b5b5b;
   height: 24px;
   background-color: #0a1027;
-  width: 60%;
+  width: 85%;
   border-radius: 15px;
+  margin: 0 0 0 40px;
 }
 
 .progress-bar {
-  background-image: linear-gradient(to right, 	#ffa399, #ff4d97);
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
   width: 80%;
   height: 18px;
   border-radius: 15px;
@@ -84,51 +101,100 @@ html {
   margin: 13px 0 12px 0;
 }
 
+.light-grey {
+  color: #bcbcbc;
+}
+
+.storage-used {
+  position: relative;
+  right: 125px;
+  margin-top: 40px;
+}
+
+.zero-GB {
+  position: relative;
+  float: left;
+  left: 45px;
+  color: #bcbcbc;
+  font-size: .75em;
+}
+
+.one-thousand-GB {
+  position: relative;
+  float: right;
+  right: 45px;
+  color: #bcbcbc;
+  font-size: .75em;
+}
+
 /**** TALK BUBBLE ****/
+.talk-background {
+  margin-left: 55%;
+  position: relative;
+  top: 70px;
+}
+
 .talk-bubble {
-	margin: 40px;
+  margin: 40px;
   display: inline-block;
   position: relative;
-	width: 200px;
-	height: auto;
-	background-color: #BCBCBC;
+  width: 200px;
+  height: auto;
+  background-color: #BCBCBC;
   border-radius: 10px 10px 0 10px;
 }
 
 .tri-right.border.btm-right:before {
-	position: absolute;
-	width: 0;
-	height: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
   left: auto;
-	right: -8px;
-	bottom: -40px;
-	border: 20px solid;
-	border-color: #666 #666 transparent transparent;
-}
-.tri-right.btm-right:after{
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-  left: auto;
-	right: 0px;
-	bottom: -20px;
-	border: 12px solid;
-	border-color: #BCBCBC #BCBCBC transparent transparent;
+  right: -8px;
+  bottom: -40px;
+  border: 20px solid;
+  border-color: #666 #666 transparent transparent;
 }
 
-.talktext{
-  padding: 1em;
-	text-align: left;
+.tri-right.btm-right:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 0px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: #BCBCBC #BCBCBC transparent transparent;
+}
+
+.talktext {
+  padding: 1.5em;
+  text-align: left;
   line-height: 1.5em;
 }
-.talktext p{
+
+.talktext p {
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
 }
+
+.GB-left {
+  color: #444;
+  font-size: .75em;
+  bottom: 5px;
+  left: 10px;
+  position: relative;
+}
+
 /**** TALK BUBBLE ****/
+.bg {
+  position: relative;
+  bottom: 100px;
+  z-index: -1;
+}
 
 p {
   color: grey;
+  display: inline-block;
 }
